@@ -8,4 +8,7 @@ require('scrabble_score')
   it("returns compiled scrabble score from word") do
     expect(scrabble_score("muffin")).to(eq(14))
   end
+  it("takes into account uppercase letters") do
+    expect(scrabble_score("Stalin")).to(eq(6))
+  end
 end
